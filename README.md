@@ -1,2 +1,4 @@
-# pratica-com-jquery
-Projeto prático utilizando jQuery
+# Pratica com- jQuery
+
+* Projeto prático utilizando jQuery
+* Site construído durante o curso de JavaScript com jQuery na plataforma Origamid
