@@ -29,12 +29,6 @@ ul li a {
 	letter-spacing: 2px;
 }
 
-ul li a.active {
-	background: #56CC9D;
-	color: white;
-	border-color: #56CC9D;
-}
-
 h1, h2, h3 {
 	font-family: 'Playfair Display';
 	font-weight: 900;
@@ -129,7 +123,7 @@ img {
 	float: left;
 }
 
-.js .item {
+[data-target] {
 	opacity: 0;
 	visibility: hidden;
 	transform: translate3d(-50px, 0, 0);
@@ -137,7 +131,13 @@ img {
 	top: 0;
 }
 
-.js .item.active {
+[data-click].active {
+	background: #56CC9D;
+	color: white;
+	border-color: #56CC9D;
+}
+
+[data-target].active {
 	opacity: 1;
 	visibility: visible;
 	position: relative;

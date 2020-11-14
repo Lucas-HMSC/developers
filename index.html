@@ -11,17 +11,17 @@
 		document.documentElement.className += ' js';
 	</script>
 
-	<section class="container animais">
+	<section class="container animais" data-group="animais">
 
 		<h1>Animais Espirituais</h1>
 
 		<ul class="tab-menu">
-			<li><a href="#fox">Fox</a></li>
-			<li><a href="#firefox">FireFox</a></li>
-			<li><a href="#wolf">Wolf</a></li>
+			<li><a href="#fox" data-click="fox">Fox</a></li>
+			<li><a href="#firefox" data-click="firefox">FireFox</a></li>
+			<li><a href="#wolf" data-click="wolf">Wolf</a></li>
 		</ul>
 
-		<div class="item" id="fox">
+		<div class="item" id="fox" data-target="fox">
 			<div class="item-img">
 				<img src="img/fox.jpg" alt="Fox">
 				<h2>Fox</h2>
@@ -34,7 +34,7 @@
 			</div>
 		</div>
 
-		<div class="item" id="firefox">
+		<div class="item" id="firefox" data-target="firefox">
 			<div class="item-img">
 				<img src="img/firefox.jpg" alt="FireFox">
 				<h2>FireFox</h2>
@@ -47,7 +47,7 @@
 			</div>
 		</div>
 
-		<div class="item" id="wolf">
+		<div class="item" id="wolf" data-target="wolf">
 			<div class="item-img">
 				<img src="img/wolf.jpg" alt="wolf">
 				<h2>Wolf</h2>
@@ -62,17 +62,17 @@
 
 	</section>
 
-	<section class="florestas">
+	<section class="florestas" data-group="florestas">
 	<div class="container">
 		<h1>Florestas Termais</h1>
 
 		<ul class="tab-menu">
-			<li><a href="#estrada">Estrada</a></li>
-			<li><a href="#sol">Sol</a></li>
-			<li><a href="#verde">Verde</a></li>
+			<li><a href="#estrada" data-click="estrada">Estrada</a></li>
+			<li><a href="#sol" data-click="sol">Sol</a></li>
+			<li><a href="#verde" data-click="verde">Verde</a></li>
 		</ul>
 
-		<div class="item" id="estrada">
+		<div class="item" id="estrada" data-target="estrada">
 			<div class="item-img">
 				<img src="img/estrada.jpg" alt="Estrada">
 				<h2>Estrada</h2>
@@ -89,7 +89,7 @@
 			</div>
 		</div>
 
-		<div class="item" id="sol">
+		<div class="item" id="sol" data-target="sol">
 			<div class="item-img">
 				<img src="img/sol.jpg" alt="Sol">
 				<h2>Sol</h2>
@@ -106,7 +106,7 @@
 			</div>
 		</div>
 
-		<div class="item" id="verde">
+		<div class="item" id="verde" data-target="verde">
 			<div class="item-img">
 				<img src="img/verde.jpg" alt="Verde">
 				<h2>Verde</h2>
