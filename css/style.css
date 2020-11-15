@@ -218,3 +218,46 @@ img {
 	top: auto;
 	transform: translate3d(0px,0,0);
 }
+
+.mobile-btn {
+	display: block;
+	color: white;
+	width: 36px;
+	height: 36px;
+	border-top: 4px solid;
+	margin: 20px 20px 0 0;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	-webkit-backface-visibility: hidden;
+}
+
+.mobile-btn::after, .mobile-btn::before {
+	content: '';
+	display: block;
+	height: 4px;
+	margin-top: 6px;
+	background: currentColor;
+	position: relative;
+	transition: transform .2s ease;
+}
+
+.mobile-btn.active {
+	border-top-color: transparent;
+}
+
+.mobile-btn.active::after {
+	margin-top: 0px;
+	top: 2px;
+	transform: rotate(45deg);
+}
+
+.mobile-btn.active::before {
+	margin-top: 0px;
+	top: 6px;
+	transform: rotate(135deg);
+}
+
+
+
+
