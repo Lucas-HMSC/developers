@@ -70,7 +70,7 @@ $('section').each(function(){
         id = $(this).attr('id'),
         $itemMenu = $('a[href="#' + id + '"]');
     
-    $(window).scroll(debounce(function(){
+    $(window).scroll(function(){
         let scrollTop = $(window).scrollTop();
 
         if (offsetTop - menuHeight < scrollTop && (offsetTop + height - menuHeight) > scrollTop) {
@@ -78,7 +78,7 @@ $('section').each(function(){
         } else {
             $itemMenu.removeClass('active');
         }
-    }, 200));
+    });
 });
 
 // Botão do menu mobile
@@ -138,7 +138,7 @@ $('.mobile-btn').click(function(){
 
     animeScroll();
 
-    $(document).scroll(debounce(function() {
+    $(document).scroll(function() {
         animeScroll();
-    }, 100));
+    });
 })();
