@@ -19,3 +19,21 @@ $('[data-group]').each(function(){
         $(this).addClass(activeClass);
     });
 });
+
+$('.menu-nav a[href^="#"]').click(function(e){
+    e.preventDefault();
+    let id = $(this).attr('href'),
+        menuHeight = $('.menu').innerHeight(),
+        targetOffset = $(id).offset().top;
+
+    $('html, body').animate({
+        scrollTop: targetOffset - menuHeight
+    }, 500)
+});
+
+$('.logo').click(function(e){
+    e.preventDefault();
+    $('html, body').animate({
+        scrollTop: 0
+    }, 500)
+});
