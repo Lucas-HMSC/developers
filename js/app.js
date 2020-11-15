@@ -37,3 +37,21 @@ $('.logo').click(function(e){
         scrollTop: 0
     }, 500)
 });
+
+$('section').each(function(){
+    let height = $(this).height(),
+        offsetTop = $(this).offset().top,
+        menuHeight = $('.menu').innerHeight(),
+        id = $(this).attr('id'),
+        $itemMenu = $('a[href="#' + id + '"]');
+    
+    $(window).scroll(function(){
+        let scrollTop = $(window).scrollTop();
+
+        if (offsetTop - menuHeight < scrollTop && (offsetTop + height - menuHeight) > scrollTop) {
+            $itemMenu.addClass('active');
+        } else {
+            $itemMenu.removeClass('active');
+        }
+    });
+});
