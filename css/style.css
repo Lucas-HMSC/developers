@@ -10,7 +10,6 @@ body {
 
 .menu {
 	background: #56CC9D;
-	overflow: hidden;
 	position: fixed;
 	width: 100%;
 	top: 0;
@@ -219,45 +218,71 @@ img {
 	transform: translate3d(0px,0,0);
 }
 
-.mobile-btn {
-	display: block;
-	color: white;
-	width: 36px;
-	height: 36px;
-	border-top: 4px solid;
-	margin: 20px 20px 0 0;
-	float: left;
-	position: relative;
-	cursor: pointer;
-	-webkit-backface-visibility: hidden;
+@media only screen and (max-width: 768px) {
+	.mobile-btn {
+		display: block;
+		color: white;
+		width: 36px;
+		height: 36px;
+		border-top: 4px solid;
+		margin: 20px 20px 0 0;
+		float: right;
+		position: relative;
+		cursor: pointer;
+		-webkit-backface-visibility: hidden;
+	}
+
+	.mobile-btn::after, .mobile-btn::before {
+		content: '';
+		display: block;
+		height: 4px;
+		margin-top: 6px;
+		background: currentColor;
+		position: relative;
+		transition: transform .2s ease;
+	}
+
+	.mobile-btn.active {
+		border-top-color: transparent;
+	}
+
+	.mobile-btn.active::after {
+		margin-top: 0px;
+		top: 2px;
+		transform: rotate(45deg);
+	}
+
+	.mobile-btn.active::before {
+		margin-top: 0px;
+		top: 6px;
+		transform: rotate(135deg);
+	}
+
+	.menu-nav.mobile-menu {
+		position: fixed;
+		background: #56CC9D;	
+		padding: 10px;
+		top: 60px;
+		right: 0px;
+		opacity: 0;
+		visibility: hidden;
+		transform: translate3d(60px, 0px, 0px);
+		transition: .3s;
+	}
+
+	.menu-nav.mobile-menu.active {
+		opacity: 1;
+		visibility: visible;
+		transform: translate3d(0px, 0px, 0px);
+	}
+
+	.menu-nav.mobile-menu li {
+		display: block;
+	}
+
+	.menu-nav.mobile-menu li a {
+		border-top: 2px solid;
+		width: 100%;
+		text-align: center;
+	}
 }
-
-.mobile-btn::after, .mobile-btn::before {
-	content: '';
-	display: block;
-	height: 4px;
-	margin-top: 6px;
-	background: currentColor;
-	position: relative;
-	transition: transform .2s ease;
-}
-
-.mobile-btn.active {
-	border-top-color: transparent;
-}
-
-.mobile-btn.active::after {
-	margin-top: 0px;
-	top: 2px;
-	transform: rotate(45deg);
-}
-
-.mobile-btn.active::before {
-	margin-top: 0px;
-	top: 6px;
-	transform: rotate(135deg);
-}
-
-
-
-
