@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tabs</title>
+	<title>Nature - Scroll</title>
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:900" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
@@ -10,9 +10,9 @@
 	<script type="text/javascript">
 		document.documentElement.className += ' js';
 	</script>
-
+	
 	<header class="menu">
-		<a href="/" class="logo">Nature</a>
+		<a class="logo" href="/">Nature</a>
 		<span class="mobile-btn"></span>
 		<nav class="menu-nav mobile-menu">
 			<ul>
@@ -22,6 +22,21 @@
 			</ul>
 		</nav>
 	</header>
+	
+	<section class="introducao slide">
+		<div>
+			<img src="img/slide/slide-1.jpg" alt="Animais">
+			<h2>Animais</h2>
+		</div>
+		<div>
+			<img src="img/slide/slide-2.jpg" alt="Florestas">
+			<h2>Florestas</h2>
+		</div>
+		<div>
+			<img src="img/slide/slide-3.jpg" alt="Montanhas">
+			<h2>Montanhas</h2>
+		</div>
+	</section>
 
 	<section class="container animais" data-group="animais" id="animais">
 
@@ -74,7 +89,7 @@
 
 	</section>
 
-	<section class="florestas" id="florestas" data-group="florestas">
+	<section class="florestas" data-group="florestas" id="florestas">
 	<div class="container">
 		<h1>Florestas Termais</h1>
 
@@ -136,7 +151,9 @@
 		</div>
 	</div>
 	</section>
-	<section class="container montanhas" data-group="montanhas" id="montanhas">
+	
+	
+<section class="container montanhas" data-group="montanhas" id="montanhas">
 
 		<h1>Montanhas da Alma</h1>
 
@@ -185,8 +202,8 @@
 			</div>
 		</div>
 
-	</section>
-
+	</section>	
+	
 	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 	<script type="text/javascript" src="js/app.js"></script>
 </body>
