@@ -13,5 +13,12 @@ $('.cxAlta').click(function cxAlta(){
     document.querySelector('textarea').value = textoDepois;
 });
 
+$('.cxBaixa').click(function cxAlta(){
+    let textoAntes = $('textarea').val(),
+        textoDepois = textoAntes.toLowerCase();
+    document.querySelector('textarea').value = textoDepois;
+});
+
+
 
 
