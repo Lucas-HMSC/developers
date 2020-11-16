@@ -18,7 +18,7 @@ form textarea {
 	padding: 15px;
 	font-size: 1.2em;
 	font-family: monospace;
-	border: 2px solid #8844ee;
+	border: 2px solid white;
 	background-color: #333;
 	color: white;
 }
@@ -35,6 +35,6 @@ p {
 }
 
 p > span {
-	color: #84e;
+	color: green;
 	font-weight: bold;
 }
