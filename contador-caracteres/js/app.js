@@ -6,3 +6,12 @@ $('textarea').on('keyup paste', function(){
         $('.palavras').text(palavras);
     }, 200);
 });
+
+$('.cxAlta').click(function cxAlta(){
+    let textoAntes = $('textarea').val(),
+        textoDepois = textoAntes.toUpperCase();
+    document.querySelector('textarea').value = textoDepois;
+});
+
+
+
