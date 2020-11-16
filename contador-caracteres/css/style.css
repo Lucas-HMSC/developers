@@ -52,3 +52,19 @@ p > span {
 	flex-wrap: wrap;	
 	justify-content: space-between;
 }
+
+div > button {
+	display: inline-block;
+	color: white;
+	background-color: #333;
+	border: 2px solid;
+	padding: 10px 2px;
+	width: auto;
+	font-family: monospace;
+	letter-spacing: 2px;
+	cursor: pointer;
+}
+
+div > button:hover {
+	border-color: green;
+}
