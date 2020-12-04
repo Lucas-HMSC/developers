@@ -166,27 +166,27 @@ p {
 	float: left;
 }
 
-.florestas {
+.fullstack {
 	background: white;
 }
 
-.florestas .item-img {
+.fullstack .item-img {
 	width: 100%;
 	text-align: center;
 	margin-bottom: -80px;
 	padding: 0px;
 }
 
-.florestas h2 {
+.fullstack h2 {
 	top: -50px;
 	right: auto;
 }
 
-.florestas .item {
+.fullstack .item {
 	margin: 60px 0;
 }
 
-.florestas .item-info {
+.fullstack .item-info {
 	width: 100%;
 }
 
