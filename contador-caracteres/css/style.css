@@ -68,3 +68,24 @@ div > button {
 div > button:hover {
 	border-color: green;
 }
+
+@media only screen and (max-width: 768px){
+	form textarea {
+		display: block;
+		margin: 0 auto;
+		width: calc(100% - 30px);
+		height: 150px;
+		padding: 15px;
+	}
+}
+
+@media only screen and (max-width: 341px){
+	.format {
+		align-items: stretch;
+		flex-direction: column;
+	}
+	div > button {
+		display: block;
+		margin: 2px 0;
+	}
+}
