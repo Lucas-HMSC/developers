@@ -79,7 +79,7 @@ div > button:hover {
 	}
 }
 
-@media only screen and (max-width: 341px){
+@media only screen and (max-width: 368px){
 	.format {
 		align-items: stretch;
 		flex-direction: column;
